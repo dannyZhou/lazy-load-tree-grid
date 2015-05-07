@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="assets/jquery-2.1.3.js"></script>
+    <script src="assets/angular-1.2.28/angular.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/directive.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="treeGrid">
+
+<div dy-tree-grid=""></div>
+
+<h3> 注意: 这个没有任何的 css 所以 如果 需要 其他的 效果
+	需要自己添加 </h3>
+
+<h1> 注意: 加载的 所有的 信息 的 id 必须唯一 如果 不唯一. 将会出现 意想不到的 bug  !!!!!!!!!!!!!!!</h1>
+<hr/>
+<h1> 主要使用的是 ng-show 和 ng-repeat </h1>
+<h1> 每一行 都 写了 一些注释. 应该挺好理解的.</h1>
+<hr/>
+<h2>改进的方案. 用 一个 树形结构 保存 父子类关系 .如果 当 父类 点击 关闭的时候. 所有的 子类 的 显示状态都改成关闭. </h2>
+<h2>这样 就能 让这个级数 变得 更多 或者无限.</h2>
+</body>
+</html>
